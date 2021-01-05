@@ -1,24 +1,21 @@
 import React from "react";
+import SecondsCounter from "./component/secondscounter.js";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
 export function Home() {
+	const counter = <SecondsCounter />;
+
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div>
+			<div className="text-center mt-5">
+				<h1>On your marks, get set, GO!</h1>
+
+				<div>{counter}</div>
+
+				<a href="#" className="btn btn-success">
+					Made by{" "}
+					<a href="https://github.com/Alvarodevs">Alvarodevs</a>
+				</a>
+			</div>
 		</div>
 	);
 }
