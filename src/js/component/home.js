@@ -1,20 +1,17 @@
 import React from "react";
-import SecondsCounter from "./component/secondscounter.js";
+
+import { Secondscounter } from "./secondscounter.js";
 
 export function Home() {
-	const counter = <SecondsCounter />;
-
 	return (
 		<div>
-			<div className="text-center mt-5">
+			<div className="text-center mt-5 d-flex flex-column align-items-center">
 				<h1>On your marks, get set, GO!</h1>
-
-				<div>{counter}</div>
-
-				<a href="#" className="btn btn-success">
+				<Secondscounter />
+				<p className="btn btn-success">
 					Made by{" "}
 					<a href="https://github.com/Alvarodevs">Alvarodevs</a>
-				</a>
+				</p>
 			</div>
 		</div>
 	);
