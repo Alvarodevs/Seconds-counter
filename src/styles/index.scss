@@ -20,3 +20,49 @@
     justify-content: center;	
     color:red;	
 }
+
+.buttonsRow{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 10px;
+  color: white;
+}
+
+.button {
+  padding: .6rem 1.5rem;
+  margin: .4rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .8rem;
+ 
+}
+
+.button:focus {
+  outline-width: 0;
+}
+
+.button-primary:hover {
+  background-color: #2641d4;
+  border: 1px solid #1b1f2b;
+}
+
+.button-dark:hover{
+  background-color: #b80817;
+}
+
+.button-primary-active {
+  background-color: #3151ff;
+  border: 1px solid #152684;
+  color: white;
+}
+
+.button-primary-inactive {
+  background-color: #3151ff;
+  border: 1px solid #152684;
+  color: white;
+}
