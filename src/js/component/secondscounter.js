@@ -26,11 +26,11 @@ export function Secondscounter() {
 				interval = setInterval(() => {
 					setSeconds((seconds = seconds + 1));
 
-					if (seconds == 3) {
+					if (seconds == 60) {
 						setMinutes((minutes = minutes + 1));
 						setSeconds((seconds = 0));
 					}
-					if (minutes == 3) {
+					if (minutes == 60) {
 						setHours((hours = hours + 1));
 						setMinutes((minutes = 0));
 						setSeconds((seconds = 0));
